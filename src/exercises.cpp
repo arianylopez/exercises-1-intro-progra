@@ -13,13 +13,13 @@ void exercise_2(double A, double B, double C){
   double D = B * B - 4 * A * C;
   if (D>=0 && A !=0) {
     double d_sqrt = sqrt(D);
-    double result1 = (-B + d_sqrt) / (2*A);
-    double result2 = (- B - d_sqrt)/(2*A);
+    double result1 = -B + (d_sqrt) / (2*A);
+    double result2 = (-B - d_sqrt)/(2*A);
     cout <<result1<<" "<<result2<<endl; 
   } else if(A==0){
     cout << -C/B << endl;
   } else {
-    cout << "Esto no es posible" << endl;
+    cout <<""<< 
   }
 }
 
