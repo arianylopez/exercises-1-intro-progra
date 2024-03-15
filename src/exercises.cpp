@@ -117,6 +117,13 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
+  if(number_of_docs==0){
+    cout << "No se encontraron documentos" << endl;
+  } else if(number_of_docs==1){
+    cout << "Se encontro un documento" << endl;
+  } else{
+    cout << number_of_docs << "documentos encontrados" << endl;
+  }
   return "";
 }
 
@@ -124,7 +131,7 @@ void exercise_15(int a, int b, int c) {
   // TODO: YOUR CODE HERE
   cout <<"Los valores son: a ="<<a<<"b = "<<b<<"c = "<<c<<endl;
   cout<<"Permutamos: a=>, b=> c, c=> a"<<endl;
-  cout<<"Los valores después de la permutación son: a ="<<c<<"b = "<<a<<"c = "<<b<<endl;
+  cout<<"Los valores despues de la permutacion son: a ="<<c<<"b = "<<a<<"c = "<<b<<endl;
 }
 
 void exercise_16(int debut, int fin) {
