@@ -76,16 +76,16 @@ void exercise_8(long int seconds) {
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
   if(s1==s5){
-    cout<<"Hemos encontrado algo"<<endl;
+    cout<<"Hemos encontrado algo!"<<endl;
   } else{
-    cout<<"Aún sin suerte"<<endl;
+    cout<<"Aun sin suerte"<<endl;
   }
   return "";
 }
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-  
+
 }
 
 string exercise_11(int number) {
