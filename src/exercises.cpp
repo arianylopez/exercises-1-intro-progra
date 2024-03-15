@@ -27,7 +27,7 @@ void exercise_2(double A, double B, double C){
   }
 }
 
-void exercise_3(int A, int B){
+void exercise_3(int a, int b){
   // TODO: YOUR CODE HERE
   if (a>b){
     cout << a/b << endl;
@@ -36,7 +36,6 @@ void exercise_3(int A, int B){
   } else if (b==0){
     cout << "Imposible" << endl;
   }
-    return 0;
 }
 
 void exercise_3(int A, int B){
