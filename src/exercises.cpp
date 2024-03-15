@@ -43,7 +43,7 @@ void exercise_5(char character) {
   if (character >= 'a' && character <= 'z'){
     cout<<"lower-case alphabet"<<endl;
   } 
-  if (character >= 'A' && character <= 'Z'){
+  else if (character >= 'A' && character <= 'Z'){
     cout<<"upper-case alphabet"<<endl;
   } else{
     cout<<"not an alphabet"<<endl;
