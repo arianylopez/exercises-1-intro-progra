@@ -15,8 +15,8 @@ void exercise_2(double A, double B, double C){
     double d_sqrt = sqrt(D);
     double result1 = (-B + d_sqrt) / (2*A);
     double result2 = (- B - d_sqrt)/(2*A);
-    cout << result1 << endl;
-    cout << result2 << endl;
+    cout <<result1<< endl;
+    cout <<result2<< endl;
   } else if(A==0){
     cout << -C/B << endl;
   } else {
@@ -31,10 +31,6 @@ void exercise_3(int a, int b){
   } else {
     cout <<a/b<< endl;
 }
-}
-
-void exercise_3(int A, int B){
-
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
