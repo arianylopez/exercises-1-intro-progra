@@ -31,6 +31,7 @@ void exercise_3(int a, int b){
   } else {
     cout <<a/b<< endl;
 }
+}
 
 void exercise_3(int A, int B){
 
