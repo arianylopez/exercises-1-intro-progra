@@ -57,9 +57,9 @@ void exercise_6(int number) {
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
   if (r>=0){
-    cout << 4*3,14*(r*r);
+    cout << 4*3.14*(r*r)<<endl;
   } else{
-    cout<<"Error:Radius cannot be negative"<<endl;
+    cout<<"Error:Radius cannot be negative."<<endl;
   }
 }
 
