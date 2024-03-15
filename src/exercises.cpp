@@ -56,10 +56,16 @@ void exercise_6(int number) {
 
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
+  if (r>=0){
+    cout << 4*3,14*(r*r);
+  } else{
+    cout<<"Error:Radius cannot be negative"<<endl;
+  }
 }
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
+
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
