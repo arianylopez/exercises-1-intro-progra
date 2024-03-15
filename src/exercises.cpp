@@ -105,12 +105,14 @@ string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
   cin>>age;
   cin>>years_of_experience;
-  if(age>=18 && years_of_experience){
-    cout<<"director de proyecto"<<endl;
-  }else if(age>=18){
-    cout<<"coordinador de proyecto"<<endl;
-  }else{
-    cout<<"director de proyecto senior"<<endl;
+  if(age>=18 && years_of_experience>=3){
+    cout<<"Project manager"<<endl;
+  }else if(age>=18 && years_of_experience>=5){
+    cout<<"Senior project manager"<<endl;
+  }else if(age>=18 && years_of_experience==0){
+    cout<<"Project coordinator"<<endl;
+  } else{
+    cout<<"Not elegible"<<endl;
   }
   return "";
 }
