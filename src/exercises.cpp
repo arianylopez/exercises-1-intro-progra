@@ -8,18 +8,14 @@ void exercise_1(string s1, string s2, string s3){
   // TODO: YOUR CODE HERE 
 }
 
-void exercise_2(double A, double B, double C);
+void exercise_2(double A, double B, double C){
   // TODO: YOUR CODE HERE
-  int main(){
-    exercise_2(2,5,2); 
-    exercise_2(2,4,2);
-    exercise_2(2,1,2);
-    exercise_2(0,4,10);
-    return 0;
   }
+
 void exercise_2(double A, double B, double C){
   double D = B * B - 4 * A * C
-  If (D>=0) {
+  double d_sqrt= sqrt(D)
+  If (D>=0 && A !=0) {
     double result1 = (-B + d_sqrt) / (2*A)
     double result2 = (- B - d_sqrt)/(2*A)
     cout << result1 << endl;
@@ -39,16 +35,7 @@ void exercise_3(int a, int b){
 }
 
 void exercise_3(int A, int B){
-  double C = A / B
-  if (A>=0 && A<= 1,000,000) {
-    cout << C << endl;
-  }
-  else if (B>=0 && B<=10,000,000){
-    cout << C << endl;
-  }
-    else if C== 0 {
-      cout << "Imposible" << endl;
-  }
+
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
