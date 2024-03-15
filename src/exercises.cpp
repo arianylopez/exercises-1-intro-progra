@@ -17,10 +17,12 @@ void exercise_2(double A, double B, double C){
     double result1 = (-B + d_sqrt) / (2*A);
     double result2 = (-B - d_sqrt)/(2*A);
     cout <<result1<<" "<<result2<<endl; 
-  } else if(A==0){
-    cout << -C/B << endl;
-  } else {
-    cout <<"";
+  } else if(D==0 && A !=0){
+    cout << (-1*(C)/B << endl;
+  } else if(A !=0 && B==0){
+    cout << sqrt(C/A)<<endl;
+  } else{
+    cout<<"";
   }
 }
 
@@ -59,7 +61,7 @@ void exercise_7(double r) {
   if (r>=0){
     cout << 4*3.14*(r*r)<<endl;
   } else{
-    cout<<"Error:Radius cannot be negative."<<endl;
+    cout<<"Error: Radius cannot be negative."<<endl;
   }
 }
 
