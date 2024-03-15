@@ -10,9 +10,6 @@ void exercise_1(string s1, string s2, string s3){
 
 void exercise_2(double A, double B, double C){
   // TODO: YOUR CODE HERE
-  }
-
-void exercise_2(double A, double B, double C){
   double D = B * B - 4 * A * C
   double d_sqrt= sqrt(D)
   If (D>=0 && A !=0) {
