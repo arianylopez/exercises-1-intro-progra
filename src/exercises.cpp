@@ -10,25 +10,26 @@ void exercise_1(string s1, string s2, string s3){
 
 void exercise_2(double A, double B, double C){
   // TODO: YOUR CODE HERE
-  double D = B * B - 4 * A * C
-  double d_sqrt= sqrt(D)
-  If (D>=0 && A !=0) {
-    double result1 = (-B + d_sqrt) / (2*A)
-    double result2 = (- B - d_sqrt)/(2*A)
+  double D = B * B - 4 * A * C;
+  if (D>=0 && A !=0) {
+    double d_sqrt = sqrt(D);
+    double result1 = (-B + d_sqrt) / (2*A);
+    double result2 = (- B - d_sqrt)/(2*A);
     cout << result1 << endl;
     cout << result2 << endl;
+  } else if(A==0){
+    cout << -C/B << endl;
+  } else {
+    cout << "Esto no es posible" << endl;
   }
 }
 
 void exercise_3(int a, int b){
   // TODO: YOUR CODE HERE
-  if (a>b){
-    cout << a/b << endl;
-  } else if (a<b){
-    cout << "0" << endl;
-  } else if (b==0){
-    cout << "Imposible" << endl;
-  }
+  if (b==0){
+    cout <<"Impossible"<< endl;
+  } else {
+    cout <<a/b<< endl;
 }
 
 void exercise_3(int A, int B){
