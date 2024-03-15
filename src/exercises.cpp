@@ -57,6 +57,7 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_7(double r) {
@@ -102,6 +103,15 @@ void exercise_12(string color1, int numb1,
 
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
+  cin>>age;
+  cin>>years_of_experience;
+  if(age>=18 && years_of_experience){
+    cout<<"director de proyecto"<<endl;
+  }else if(age>=18){
+    cout<<"coordinador de proyecto"<<endl;
+  }else{
+    cout<<"director de proyecto senior"<<endl;
+  }
   return "";
 }
 
