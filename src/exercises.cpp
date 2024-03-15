@@ -106,15 +106,14 @@ string exercise_13(int age, int years_of_experience) {
   cin>>age;
   cin>>years_of_experience;
   if(age>=18 && years_of_experience>=3){
-    cout<<"Project manager"<<endl;
+    return "Project manager";
   }else if(age>=18 && years_of_experience>=5){
-    cout<<"Senior project manager"<<endl;
+    return "Senior project manager";
   }else if(age>=18 && years_of_experience==0){
-    cout<<"Project coordinator"<<endl;
+    return "Project coordinator";
   } else{
-    cout<<"Not elegible"<<endl;
+    return "Not elegible";
   }
-  return "";
 }
 
 string exercise_14(int number_of_docs) {
