@@ -6,7 +6,13 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3){
   // TODO: YOUR CODE HERE 
-
+if(s1<s2 && s1<s3){
+  cout<<s1;
+} else if(s2<s1 && s2<s3){
+  cout << s2;
+} else{
+  cout<<s3;
+}
 }
 
 void exercise_2(double A, double B, double C){
@@ -86,6 +92,10 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
+int suma=a+b;
+string multiplicador = to_string(suma);
+int mult = multiplicador.size(suma);
+int resultado  = suma*mult;
 
 }
 
@@ -112,7 +122,7 @@ string exercise_13(int age, int years_of_experience) {
   }else if(age>=18 && years_of_experience==0){
     return "Project coordinator";
   } else{
-    return "Not elegible";
+    return "Not eligible";
   }
 }
 
