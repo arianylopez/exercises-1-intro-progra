@@ -6,6 +6,7 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3){
   // TODO: YOUR CODE HERE 
+
 }
 
 void exercise_2(double A, double B, double C){
@@ -34,10 +35,19 @@ void exercise_3(int a, int b){
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
+  if (character >= 'a' && character <= 'z'){
+    cout<<"lower-case alphabet"<<endl;
+  } 
+  if (character >= 'A' && character <= 'Z'){
+    cout<<"upper-case alphabet"<<endl;
+  } else{
+    cout<<"not an alphabet"<<endl;
+  }
 }
 
 void exercise_6(int number) {
