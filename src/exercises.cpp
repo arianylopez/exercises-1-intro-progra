@@ -34,7 +34,7 @@ void exercise_2(double A, double B, double C){
   } else if (A==0){
     cout << -C/B << endl;
   } else{
-    cout <<"";
+    cout <<" ";
   }
 }
 
@@ -105,6 +105,15 @@ void exercise_12(string color1, int numb1,
 
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
+  if (age>=18 && years_of_experience==0){
+    return "coordinador de proyecto";
+  } else if (age>=18 && years_of_experience==3){
+    return "director de proyecto";
+  } else if (age>=18 && years_of_experience=>=5){
+    return "director senior";
+  } else{
+    return "Ineligible";
+  }
 }
 
 string exercise_14(int number_of_docs) {
@@ -114,9 +123,9 @@ string exercise_14(int number_of_docs) {
   } else if(number_of_docs==1){
     cout << "Se encontro un documento" << endl;
   } else{
-    cout << number_of_docs << "documentos encontrados" << endl;
+    cout << number_of_docs << " documentos encontrados" << endl;
   }
-  return "";
+  return 0;
 }
 
 void exercise_15(int a, int b, int c) {
