@@ -251,10 +251,11 @@ void exercise_16(int debut, int fin) {
     cout << "Que extraño, el inicio del alquiler es despues del final!" << endl;
     return;
   }
+
   int tarifabaja = 0;
   int tarifaalta = 0;
   int costofinal = 0;
-  for (int i=debut; i < fin; ++i){
+  for (int i = debut; i < fin; ++i){
     if ((i >= 0 && i<7) || (i>=17 && i<24)){
       tarifabaja++;
     } else{
