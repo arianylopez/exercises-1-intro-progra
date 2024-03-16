@@ -18,21 +18,21 @@ if(s1<s2 && s1<s3){
 void exercise_2(double A, double B, double C){
   // TODO: YOUR CODE HERE
   double D = B * B - 4 * A * C;
-  if (D>0 && A !=0) {
+  if (D>0 && A !=0){
     double d_sqrt = sqrt(D);
     double result1 = (-B + d_sqrt) / (2*A);
     double result2 = (-B - d_sqrt)/(2*A);
     cout <<result1<<" "<<result2<<endl; 
   } else if(D==0 && A !=0){
     double d_sqrt = sqrt(D);
-    double result1 = (-B+d_sqrt)/(2*A);
-    cout << result1 << endl;
+    double result3 = (-B+ d_sqrt)/(2*A);
+    cout << result3 << endl;
   } else if(A !=0 && B==0){
     cout << (-1*(C))/B<<endl;
   } else if(A!=0 && B==0){
-    cout<<sqrt (C/A) << endl;
+    cout<<sqrt(C/A)<< endl;
   } else
-  cout << "";
+  cout <<"";
 }
 
 void exercise_3(int a, int b){
@@ -129,7 +129,7 @@ string exercise_14(int number_of_docs) {
 
 void exercise_15(int a, int b, int c) {
   // TODO: YOUR CODE HERE
-  cout <<"Los valores son: a ="<<a<<"b = "<<b<<"c = "<<c<<endl;
+  cout << "Los valores son: a =" << a << "b = " << b << "c = " << c << endl;
   cout<<"Permutamos: a=>, b=> c, c=> a"<<endl;
   cout<<"Los valores despues de la permutacion son: a ="<<c<<"b = "<<a<<"c = "<<b<<endl;
 }
