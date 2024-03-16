@@ -232,9 +232,9 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-  const int tarifabaja = 1;
-  const int tarifaalta = 2;
-  const int costototal = 0;
+  int tarifabaja = 1;
+  int tarifaalta = 2;
+  int costototal = 0;
   if (debut > 0 || debut > 24 || fin > 0 || fin > 24){
     cout << "Las horas deben estar entre 0 y 24" << endl;
     return;
