@@ -93,6 +93,11 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
+  if(number==11235813){
+    cout << "Se encontro a Fibonacci" << endl;
+  } else{
+    cout << "Esto no es de Fibonacci" << endl;
+  }
   return "";
 }
 
@@ -107,7 +112,7 @@ string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
   if (age<18 && years_of_experience==0){
     cout << "Not eligible" << endl;
-  } else if (age>=18 && years_of_experience==3){
+  } else if (age>=18 && years_of_experience<=4){
     cout << "Project manager" << endl;
   } else if(age>=18 && years_of_experience>=5){
     cout << "Senior project manager" << endl;
@@ -121,14 +126,23 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
+<<<<<<< HEAD
+  if(number_of_docs==0){
+    cout << "No se encontraron documentos"<< endl;
+=======
   if(number_of_docs<=0){
     cout << "No se encontraron documentos" << endl;
+>>>>>>> 302337954d6950131d5884242db29ce79b626fba
   } else if(number_of_docs==1){
+<<<<<<< HEAD
+    cout << "Se encontro un documento"<< endl;
+=======
     cout << "Se encontro un documento" << endl;
+>>>>>>> 302337954d6950131d5884242db29ce79b626fba
   } else{
     cout << number_of_docs << " documentos encontrados" << endl;
   }
-  return "";
+  return" ";
 }
 
 void exercise_15(int a, int b, int c) {
