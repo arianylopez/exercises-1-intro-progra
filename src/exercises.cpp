@@ -80,11 +80,37 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
-  
+  long int hours = seconds/3600;
+  long int minutes = (seconds%3600) / 60;
+  long int seconds = seconds%60;
+  if (seconds<0){
+    cout<<"Error: Inputs seconds cannot be negative";
+  } else if(hours<10 && minutes<10 && seconds<10){
+    cout<<"0"<<hours<<"0"<<minutes<<":0"<<seconds<<endl;
+  } else if(hours<10 && minutes>=10 && seconds<10){
+    cout<<"0"<<hours<<":"<<minutes<<":0"<<seconds<<endl;
+  } else if(hours<10 && minutes<10 && seconds>=10){
+    cout<<"0"<<hours<<":0"<<minutes<<":"<<seconds<<endl;
+  } else if(hours<10 && minutes>=10 && seconds>=10){
+    cout<<"0"<<hours<<":"<<minutes<<":"<<seconds<<endl;
+  } else if(hours>=10 && minutes>=10 && seconds>=10){
+    cout<<hours<<":"<<minutes<<":"<<seconds<<endl;
+  } else if(hours>=10 && minutes<10 && seconds<10){
+    cout<<hours<<":"<<minutes<<":0"<<seconds<<endl;
+  } else if(hours>=10 && minutes>=10 && seconds<10){
+    cout<<hours<<":"<<minutes<<":0"<<seconds<<endl;
+  } else if (hours>=10 && minutes>10 && seconds<10){
+    cout<<hours<<":0"<<minutes<<":"<<seconds<<endl;
+  }
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
+  if (s1==s5){
+    cout<<"Hemos encontrado algo!";
+  } else {
+    return"Aun sin suerte";
+  }
 }
 
 int exercise_10(int a, int b) {
@@ -93,6 +119,7 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
+  int number = 11235813;
   if(number ==1){
   cout << "Esto no es de Fibonacci" << endl;
   } else if(number==12333){
