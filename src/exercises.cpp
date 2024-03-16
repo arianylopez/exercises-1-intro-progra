@@ -137,11 +137,11 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  char ss1 = s1[0]
-  char ss2 = s2[0]
-  char ss3 = s3[0]
-  char ss4 = s4[0]
-  char ss5 = s5[0]
+  char ss1 = s1[0];
+  char ss2 = s2[0];
+  char ss3 = s3[0];
+  char ss4 = s4[0];
+  char ss5 = s5[0];
   string result9;
   if(ss1 == ss5){
     result9 = "Hemos encontrado algo";
