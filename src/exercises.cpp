@@ -190,6 +190,7 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
+  if(color4 == "?" && num1==4 || numb4==numb1 )
 }
 
 string exercise_13(int age, int years_of_experience) {
@@ -232,9 +233,6 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-  int tarifabaja = 1;
-  int tarifaalta = 2;
-  int costototal = 0;
   if (debut > 0 || debut > 24 || fin > 0 || fin > 24){
     cout << "Las horas deben estar entre 0 y 24" << endl;
     return;
@@ -245,6 +243,9 @@ void exercise_16(int debut, int fin) {
     cout << "Que extraño, el inicio del alquiler es despues del final" << endl;
     return;
   }
+  int tarifabaja = 0;
+  int tarifaalta = 0;
+  int costofinal = 0;
   for (int i=debut; i < fin; ++i){
     if ((i >= 0 && i<7) || (i>=17 && i<24)){
       tarifabaja++;
@@ -252,9 +253,9 @@ void exercise_16(int debut, int fin) {
       tarifaalta++;
     }
   }
-  costototal = tarifabaja + 2 * tarifaalta;
+  costofinal = tarifabaja + 2 * tarifaalta;
   cout << "Has alquilado una bicicleta por" << endl;
   cout << tarifabaja << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
   cout << tarifaalta << "hora(s) con el tarifario de 1 boliviano(s)" << endl;
-  cout << "El monto toal a pagar es de " << costototal << " boliviano(s)." << endl;
+  cout << "El monto toal a pagar es de " << costofinal << " boliviano(s)." << endl;
 }
