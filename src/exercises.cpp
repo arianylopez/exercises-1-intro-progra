@@ -304,3 +304,4 @@ if(debut==0 && debut<=24 || fin>=0 && fin<=24){
     cout << hora1 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     cout << "El monto a pagar es de " << tarifa1 + tarifa2 + tarifa3 << " boliviano(s)." << endl;
 }
+}
