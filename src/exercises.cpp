@@ -241,30 +241,35 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-  if (debut > 0 || debut > 24 || fin > 0 || fin > 24){
-    cout << "Las horas deben estar entre 0 y 24!" << endl;
-    return 1;
-  } else if (debut == fin) {
-    cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-    return 1;
-  } else if (debut > fin){
-    cout << "Que extraño, el inicio del alquiler es despues del final!" << endl;
-    return 1;
-  }
+if(debut > 0 || debut>24 || fin>0 || fin>24){
+  cout << "Las horas deben estar entre 0 y 24!" << endl;
+} else if (debut==fin){
+  cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+} else if(debut>fin){
+  cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+}
 
-  int tarifabaja = 0;
-  int tarifaalta = 0;
-  int costofinal = 0;
-  for (int i = debut; i < fin; ++i){
-    if ((i >= 0 && i<7) || (i>=17 && i<24)){
-      tarifabaja++;
-    } else{
-      tarifaalta++;
-    }
-  }
-  costofinal = tarifabaja + 2 * tarifaalta;
-  cout << "Has alquilado una bicicleta por" << endl;
-  cout << tarifabaja << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-  cout << tarifaalta << "hora(s) con el tarifario de 1 boliviano(s)" << endl;
-  cout << "El monto toal a pagar es de " << costofinal << " boliviano(s)." << endl;
+const int tarifabaja = 1;
+const int tarifaalta = 2;
+int costototal = 0;
+if(debut >= 0 && debut < 7 && fin>=0 && fin>=7){
+  costototal += (fin - debut) * tarifabaja;
+} else if(debut >= 17 && debut < 24 && fin >= 17 && fin <= 24){
+  costototal += (fin - debut) * tarifabaja;
+} else if(debut >=0 && debut < 7 && fin >= 17 && fin <=24){
+  costototal += (7-debut) * tarifabaja;
+  costototal += (fin - 17) * tarifabaja;
+} else if(debut >= 17 && debut < 24 && fin >=0 && fin <= 7){
+  costototal += (24 - debut) * tarifabaja;
+  costototal += fin * tarifabaja;
+} else{
+  costototal += (7-debut) * tarifaalta;
+  costototal += (fin - 7) * tarifaalta;
+}
+return costototal;
+
+cout << "Has alquilado una bicicleta por:" << endl;
+cout << fin - debut << "hora(s) con el tarifario de 1 boliviano(s)" << endl;
+cout << fin - inicio << "hora(s) con el tarifario de 2 boliviano(s)" << endl;
+cout << "El monto a pagar es de " << costototal << " boliviano(s)" << endl;
 }
