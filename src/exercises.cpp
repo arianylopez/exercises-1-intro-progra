@@ -25,17 +25,17 @@ void exercise_2(double A, double B, double C){
     cout <<result1<<" "<<result2<<endl; 
   } else if(D==0 && A !=0){
     double d_sqrt = sqrt(D);
-    double result3 = (-B+ d_sqrt)/(2*A);
+    double result3 = (-B + d_sqrt)/(2*A);
     cout << result3 << endl;
   } else if(A !=0 && B==0){
-    cout << (-1*(C))/B<<endl;
+    cout << -C/A <<endl;
   } else if(A!=0 && B==0){
     cout<<sqrt(C/A)<< endl;
-  } else if (A==0){
+  } else if (A==0 && B!=0){
     cout << -C/B << endl;
-  } else{
-    cout <<" ";
-  }
+  } else if(D<0) {
+    cout << "";
+  } 
 }
 
 void exercise_3(int a, int b){
@@ -66,7 +66,32 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
-
+switch(number){
+  case 1:
+  cout << "Monday" << endl;
+  break;
+  case 2:
+  cout << "Tuesday" << endl;
+  break;
+  case 3:
+  cout << "Wednesday" << endl;
+  break;
+  case 4:
+  cout << "Thursday" << endl;
+  break;
+  case 5:
+  cout << "Friday" << endl;
+  break;
+  case 6:
+  cout << "Satuday" << endl;
+  break;
+  case 7:
+  cout << "Sunday" << endl;
+  break;
+  default:
+  cout << "Invalid input" << endl;
+  break;
+}
 }
 
 void exercise_7(double r) {
@@ -160,11 +185,11 @@ string exercise_14(int number_of_docs) {
   if(number_of_docs<=0){
     cout << "No se encontraron documentos" << endl;
   } else if(number_of_docs==1){
-    cout << "Se encontro un documento" << endl;
+    return "Se encontro un documento";
   } else{
     cout << number_of_docs << " documentos encontrados" << endl;
   }
-  return" ";
+  return"";
 }
 
 void exercise_15(int a, int b, int c) {
