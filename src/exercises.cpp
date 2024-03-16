@@ -268,14 +268,19 @@ if(debut >= 0 && debut <= 24 && fin >= 0 && fin <= 24){
     tarifa1 = fin - debut;
   }
   costototal = tarifa1 + 2 * tarifa2;
-  cout << "Has alquilado una bicicleta por:" << endl;
+  cout << "Has alquilado una bicicleta por" << endl;
+  if(tarifa1 > 0){
   cout << tarifa1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+  }
+  if(tarifa2>0){
   cout << tarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+  }
   cout << "El monto total a pagar es de " << costototal << " boliviano(s)." << endl;
-} else if(debut>fin) {
+}
+ if(debut>fin) {
   cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+}
 } else {
   cout << "Las horas deben estar entre 0 y 24" << endl;
-}
 }
 }
