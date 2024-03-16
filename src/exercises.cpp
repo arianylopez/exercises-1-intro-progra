@@ -34,7 +34,7 @@ void exercise_2(double A, double B, double C){
   } else if (A==0){
     cout << -C/B << endl;
   } else{
-  cout <<"";
+    cout << " " << endl;
   }
 }
 
