@@ -109,7 +109,7 @@ string exercise_13(int age, int years_of_experience) {
     return "coordinador de proyecto";
   } else if (age>=18 && years_of_experience==3){
     return "director de proyecto";
-  } else if (age>=18 && years_of_experience=>=5){
+  } else if (age>=18 && years_of_experience>=5){
     return "director senior";
   } else{
     return "Ineligible";
@@ -125,7 +125,7 @@ string exercise_14(int number_of_docs) {
   } else{
     cout << number_of_docs << " documentos encontrados" << endl;
   }
-  return 0;
+  return "";
 }
 
 void exercise_15(int a, int b, int c) {
