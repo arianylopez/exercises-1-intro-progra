@@ -235,15 +235,15 @@ void exercise_16(int debut, int fin) {
   const int tarifabaja = 1;
   const int tarifaalta = 2;
   const int costototal = 0;
-  if debut > 0 || debut > 24 || fin > 0 || fin > 24){
+  if (debut > 0 || debut > 24 || fin > 0 || fin > 24){
     cout << "Las horas deben estar entre 0 y 24" << endl;
-    return 0;
+    return;
   } else if (debut == fin) {
     cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo" << endl;
-    return 0;
+    return;
   } else if (debut > fin){
     cout << "Que extraño, el inicio del alquiler es despues del final" << endl;
-    return 0;
+    return;
   }
   for (int i=debut; i < fin; ++i){
     if ((i >= 0 && i<7) || (i>=17 && i<24)){
@@ -252,9 +252,9 @@ void exercise_16(int debut, int fin) {
       tarifaalta++;
     }
   }
-  costofinal = tarifabaja + 2 * tarifaalta;
+  costototal = tarifabaja + 2 * tarifaalta;
   cout << "Has alquilado una bicicleta por" << endl;
   cout << tarifabaja << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
   cout << tarifaalta << "hora(s) con el tarifario de 1 boliviano(s)" << endl;
-  cout << "El monto toal a pagar es de " << costofinal << " boliviano(s)." << endl;
+  cout << "El monto toal a pagar es de " << costototal << " boliviano(s)." << endl;
 }
