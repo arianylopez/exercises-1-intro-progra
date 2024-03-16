@@ -255,7 +255,7 @@ if(debut >= 0 && debut <= 24 && fin >= 0 && fin <= 24){
       tarifa2 = fin - 7;
     } else {
       tarifa1 = 7 - debut;
-      tarifa2 = 10;
+      tarifa2 = fin - 17;
     }
   } else if (debut<17){
     if(fin<=17){
