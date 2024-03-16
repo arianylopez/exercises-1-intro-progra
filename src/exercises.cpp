@@ -31,8 +31,11 @@ void exercise_2(double A, double B, double C){
     cout << (-1*(C))/B<<endl;
   } else if(A!=0 && B==0){
     cout<<sqrt(C/A)<< endl;
-  } else
+  } else if (A==0){
+    cout << -C/B << endl;
+  } else{
   cout <<"";
+  }
 }
 
 void exercise_3(int a, int b){
