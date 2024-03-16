@@ -254,13 +254,13 @@ if(debut==0 && debut<=24 || fin>=0 && fin<=24){
     tarifas = horas * 1;
     cout << "Has alquilado una bicicleta por:" << endl;
     cout << horas << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-    cout << "El monto a pagar es de " << tarifa << " boliviano(s)." << endl;
+    cout << "El monto a pagar es de " << tarifas << " boliviano(s)." << endl;
   } else if(debut<=17 && debut>=7 || fin>=7 && fin<=17){
     horas = fin - debut;
     tarifas = horas * 2;
     cout << "Has alquilado una bicicleta por:" << endl;
     cout << horas << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-    cout << "El monto a pagar es de " << tarifa << " boliviano(s)." << endl;
+    cout << "El monto a pagar es de " << tarifas << " boliviano(s)." << endl;
   } else if(debut<=24 && debut>=17 || fin>=17 && fin<=24){
     horas = fin - debut;
     tarifas = horas * 1;
@@ -271,7 +271,7 @@ if(debut==0 && debut<=24 || fin>=0 && fin<=24){
     horas = fin - debut;
     int hora1 = debut - 7;
     int tarifa1 = debut*1;
-    int hora2 = hora - hora1;
+    int hora2 = horas - hora1;
     int tarifa2 = hora2 * 2;
     tarifas = hora2 * 2;
     cout << "Has alquilado una bicicleta por:" << endl;
@@ -282,7 +282,7 @@ if(debut==0 && debut<=24 || fin>=0 && fin<=24){
     horas = fin - debut;
     int hora1 = 17 - debut;
     int tarifa1 = debut*2;
-    int hora2 = hora - hora1;
+    int hora2 = horas - hora1;
     int tarifa2 = hora2 * 2;
     tarifas = hora2 * 1;
     cout << "Has alquilado una bicicleta por:" << endl;
@@ -297,11 +297,12 @@ if(debut==0 && debut<=24 || fin>=0 && fin<=24){
     int tarifa2 = hora2 * 1;
     int hora1_ = hora1 + hora2;
     int tarifa1_ = hora1 * 1;
-    int hora3 = hora - (hora1 + hora2);
+    int hora3 = horas - (hora1 + hora2);
     int tarifa3 = hora3 * 2;
     cout << "Has alquilado una bicicleta por:" << endl;
     cout << hora2 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
     cout << hora1 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     cout << "El monto a pagar es de " << tarifa1 + tarifa2 + tarifa3 << " boliviano(s)." << endl;
+}
 }
 }
