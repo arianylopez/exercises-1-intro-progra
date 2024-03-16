@@ -186,7 +186,7 @@ string exercise_13(int age, int years_of_experience) {
       return "Project coordinator";
     }
   } else{
-    return "Not eligible"
+    return "Not eligible";
   }
   return "";
 }
