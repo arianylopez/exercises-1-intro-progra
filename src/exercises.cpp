@@ -270,10 +270,9 @@ if(debut >= 0 && debut <= 24 || fin >= 0 && fin <= 24){
   cout << tarifa1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
   cout << tarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
   cout << "El monto total a pagar es de " << costototal << " boliviano(s)." << endl;
-} else {
+} else if(debut>fin) {
   cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
 } else {
   cout << "Las horas deben estar entre 0 y 24" << endl;
 }
-return costototal;
 }
