@@ -137,11 +137,20 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  if (s1==s5){
-    cout<<"Hemos encontrado algo!";
+  char ss1 = s1[0]
+  char ss2 = s2[0]
+  char ss3 = s3[0]
+  char ss4 = s4[0]
+  char ss5 = s5[0]
+  string result9;
+  if(ss1 == ss5){
+    result9 = "Hemos encontrado algo";
   } else {
-    return"Aun sin suerte";
+    result9 = "Aun sin suerte";
   }
+  string result10 = string(1, ss1) + string(1, ss2) + string(1, ss3) + string(1, ss4) + string(1, ss5);
+  cout << result10 << endl;
+  return result9;
 }
 
 int exercise_10(int a, int b) {
