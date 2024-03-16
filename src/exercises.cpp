@@ -243,13 +243,13 @@ void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
   if (debut > 0 || debut > 24 || fin > 0 || fin > 24){
     cout << "Las horas deben estar entre 0 y 24!" << endl;
-    return;
+    return 1;
   } else if (debut == fin) {
     cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-    return;
+    return 1;
   } else if (debut > fin){
     cout << "Que extraño, el inicio del alquiler es despues del final!" << endl;
-    return;
+    return 1;
   }
 
   int tarifabaja = 0;
