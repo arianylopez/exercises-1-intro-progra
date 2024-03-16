@@ -266,10 +266,10 @@ if(debut >= 0 && debut < 7 && fin>=0 && fin>=7){
   costototal += (7-debut) * tarifaalta;
   costototal += (fin - 7) * tarifaalta;
 }
-return costototal;
+return ;
 
 cout << "Has alquilado una bicicleta por:" << endl;
 cout << fin - debut << "hora(s) con el tarifario de 1 boliviano(s)" << endl;
-cout << fin - inicio << "hora(s) con el tarifario de 2 boliviano(s)" << endl;
+cout << fin - debut << "hora(s) con el tarifario de 2 boliviano(s)" << endl;
 cout << "El monto a pagar es de " << costototal << " boliviano(s)" << endl;
 }
