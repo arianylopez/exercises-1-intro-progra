@@ -280,7 +280,7 @@ if(debut >= 0 && debut <= 24 && fin >= 0 && fin <= 24){
  if(debut>fin) {
   cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
 } else if(debut==fin){
-        cout << "Que extraño, no haz alquilado tu bicicleta por mucho tiempo!" << endl;
+        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
 }
 } else {
   cout << "Las horas deben estar entre 0 y 24!" << endl;
