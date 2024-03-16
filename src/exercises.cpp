@@ -244,9 +244,11 @@ void exercise_16(int debut, int fin) {
 int costototal = 0;
 int tarifa1 = 0;
 int tarifa2 = 0;
-if(debut >= 0 && debut <= 24 || fin >= 0 && fin <= 24){
+
+if(debut >= 0 && debut <= 24 && fin >= 0 && fin <= 24){
   if(debut < fin){
-    if(debut >= 0 && fin < 7){
+    if(debut >= 0 && debut < 7){
+      if(fin<=7){
       tarifa1 = fin - debut;
     } else if(fin<=17){
       tarifa1 = 7 - debut;
