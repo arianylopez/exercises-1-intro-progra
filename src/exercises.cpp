@@ -185,13 +185,15 @@ string exercise_13(int age, int years_of_experience) {
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
   if(number_of_docs<=0){
-    cout << "No se encontraron documentos" << endl;
+    string result0 ="No se encontraron documentos";
+    return result0;
   } else if(number_of_docs==1){
-    return "Se encontro un documento";
+    string result = "Se encontro un documento";
+    return result;
   } else{
-    cout << number_of_docs << " documentos encontrados" << endl;
+    string resultfinal = to_string(number_of_docs) + " " + "documentos encontrados";
   }
-  return"";
+  return "";
 }
 
 void exercise_15(int a, int b, int c) {
