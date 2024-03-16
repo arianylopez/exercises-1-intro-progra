@@ -151,7 +151,7 @@ int exercise_10(int a, int b) {
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
   int numberfibo = 11235813;
-  if(number1==numberfibo){
+  if(number==numberfibo){
   return "Se encontro a Fibonacci";
   } else {
     return "Esto no es de Fibonacci";
