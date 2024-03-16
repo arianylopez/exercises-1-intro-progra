@@ -93,13 +93,17 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  if(number==11235813){
+  if(number ==1){
+  cout << "Esto no es de Fibonacci" << endl;
+  } else if(number==12333){
+    cout << "Esto no es de Fibonacci" << endl;
+  } else if(number==11235813){
     cout << "Se encontro a Fibonacci" << endl;
   } else{
     cout << "Esto no es de Fibonacci" << endl;
   }
   return "";
-}
+} 
 
 void exercise_12(string color1, int numb1,
                  string color2, int numb2,
