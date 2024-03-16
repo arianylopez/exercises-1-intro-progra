@@ -201,6 +201,7 @@ string exercise_14(int number_of_docs) {
     return result;
   } else{
     string resultfinal = to_string(number_of_docs) + " " + "documentos encontrados";
+    return resultfinal;
   }
   return "";
 }
