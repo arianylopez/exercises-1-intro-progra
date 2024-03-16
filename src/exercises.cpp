@@ -111,28 +111,37 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
+  if(second >=0){
   int hours = seconds/3600;
-  int minutes = (seconds%3600) / 60;
-  int secondss = seconds%60;
-  if (secondss<0){
-    cout<<"Error: Inputs seconds cannot be negative";
-  } else if(hours<10 && minutes<10 && secondss<10){
-    cout<<"0"<<hours<<"0"<<minutes<<":0"<<secondss<<endl;
-  } else if(hours<10 && minutes>=10 && secondss<10){
-    cout<<"0"<<hours<<":"<<minutes<<":0"<<secondss<<endl;
-  } else if(hours<10 && minutes<10 && secondss>=10){
-    cout<<"0"<<hours<<":0"<<minutes<<":"<<seconds<<endl;
-  } else if(hours<10 && minutes>=10 && secondss>=10){
-    cout<<"0"<<hours<<":"<<minutes<<":"<<secondss<<endl;
-  } else if(hours>=10 && minutes>=10 && secondss>=10){
-    cout<<hours<<":"<<minutes<<":"<<secondss<<endl;
-  } else if(hours>=10 && minutes<10 && secondss<10){
-    cout<<hours<<":"<<minutes<<":0"<<secondss<<endl;
-  } else if(hours>=10 && minutes>=10 && seconds<10){
-    cout<<hours<<":"<<minutes<<":0"<<secondss<<endl;
-  } else if (hours>=10 && minutes>10 && secondss<10){
-    cout<<hours<<":0"<<minutes<<":"<<seconds<<endl;
+  int minutes = secondss / 60;
+  int secondss = seconds%3600;
+  int finalsecond= secondss % 60;
+
+  string hours1 = to_string(hours);
+  string minutes1 = to_string(minutes);
+  string finalsecond1 = to_string(finalsecond);
+  int hours1size = hours1.size();
+  int minutes1size = minutes1.size();
+  int finalsecond1size = finalsecond1.size();
+
+  if(hours1size < 2){
+    cout << "0" << hours << ":";
+  } else {
+    cout << hours << ":";
   }
+  if (minutes1size < 2){
+    cout << "0" << minutes << ":";
+  } else {
+    cout << minutes << ":";
+  }
+  if(finalsecond1size <2){
+    cout << "0" << finalsecond << endl;
+  } else {
+    cout << finalsecond << endl;
+  }
+} else if (seconds < 0){
+  cout << "Error: Input seconds cannot be negative" << endl;
+}
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
@@ -155,6 +164,7 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
+
 }
 
 string exercise_11(int number) {
