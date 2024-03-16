@@ -190,7 +190,7 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-  if(color4 == "?" && num1==numb4 || numb4==numb1 && color1==color4 || color1==color4 && numb1==numb4){
+  if(color4 == "?" && numb1==numb4 || numb4==numb1 && color1==color4 || color1==color4 && numb1==numb4){
     cout << 1 << endl;
   } 
   if(color4=="?" && numb2==numb4 || numb4==-1 && color2==color4 || color2==color4 && numb2==numb4){
