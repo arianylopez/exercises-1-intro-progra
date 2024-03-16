@@ -170,7 +170,7 @@ if (a >= 0 && b >= 0){
   int result = sum * digitos;
   return result;
 } else{
-  return 0
+  return 0;
 }
 }
 
