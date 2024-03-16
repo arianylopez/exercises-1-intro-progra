@@ -144,7 +144,7 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   char ss5 = s5[0];
   string result9;
   if(ss1 == ss5){
-    result9 = "Hemos encontrado algo";
+    result9 = "Hemos encontrado algo!";
   } else {
     result9 = "Aun sin suerte";
   }
