@@ -273,5 +273,5 @@ if(tarifa2 > 0){
   cout << tarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
   costototal += tarifa2 * 2;
 }
-cout << "El costo total a pagar es de " << costototal << " bolivianos" << endl;
+cout << "El monto total a pagar es de " << costototal << " bolivianos" << endl;
 }
