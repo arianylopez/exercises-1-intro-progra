@@ -241,49 +241,37 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-int costototal = 0;
-int tarifa1 = 0;
-int tarifa2 = 0;
-
-if(debut >= 0 && debut <= 24 && fin >= 0 && fin <= 24){
-  if(debut < fin){
-    if(debut >= 0 && debut < 7){
-      if(fin<=7){
-      tarifa1 = fin - debut;
-    } else if(fin<=17){
-      tarifa1 = 7 - debut;
-      tarifa2 = fin - 7;
-    } else {
-      tarifa1 = 7 - debut;
-      tarifa2 = fin - 17;
-    }
-  } else if (debut<17){
-    if(fin<=17){
-      tarifa2 = fin - debut;
-    } else{
-      tarifa2 = 17 - debut;
-      tarifa1 = fin - 17;
-    }
-  } else {
-    tarifa1 = fin - debut;
-  }
-  costototal = tarifa1 + 2 * tarifa2;
-  cout << "Haz alquilado una bicicleta por" << endl;
-  if(tarifa1 > 0){
-  cout << tarifa1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-  }
-  if(tarifa2>0){
-  cout << tarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-  }
-  cout << "El monto total a pagar es de " << costototal << " boliviano(s)." << endl;
-}
- if(debut>fin) {
-  cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
-} else if(debut==fin){
-        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-}
-} else {
-  cout << "Las horas deben estar entre 0 y 24!" << endl;
+if(debut<0 || debut>24 || fin<0 || fin>24){
+  cout << "Las horas deben estar entre 0 y 24" << endl;
   return;
-} 
+}
+if(debut>fin){
+  cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+  return;
+}
+if(debut==fin){
+  cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+  return;
+}
+int costototal=0;
+int tarifa1=0;
+int tarifa2=0;
+while (debut<fin){
+  if(debut>=0 && debut<7 || debut>=17 && debut<=24){
+    tarifa1++;
+  } else {
+    tarifa2++;
+  }
+  debut++;
+}
+cout << "Haz alquilado una bicicleta por" << endl;
+if(tarifa1 > 0){
+  cout << tarifa1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+  costototal += tarifa1;
+}
+if(tarifa2 > 0){
+  cout << tarifa2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+  costototal += tarifa2 * 2;
+}
+cout << "El costo total a pagar es de " << costototal << " bolivianos" << endl;
 }
